@@ -1,0 +1,28 @@
+#css3calculator{ style: "width: 235px; height: 300px" }
+  %form{ name: "calc" }
+    %p CalCSS3
+    %input{ type: "text", size: "16", name: "input" }
+    %span 888888888888888888888888888888888888
+    %div
+      %input{ type: "button", name: "one", value: "  1  ", onclick: "calc.input.value += '1'" }
+      %input{ type: "button", name: "two", value: "  2  ", onclick: "calc.input.value += '2'" }
+      %input{ type: "button", name: "three", value: "  3  ", onclick: "calc.input.value += '3'" }
+      %input.last.function{ type: "button", name: "plus", value: "  +  ", onclick: "calc.input.value += ' + '"}
+
+      %input{ type: "button", name: "four", value: "  4  ", onclick: "calc.input.value += '4'" }
+      %input{ type: "button", name: "five", value: "  5  ", onclick: "calc.input.value += '5'" }
+      %input{ type: "button", name: "six", value: "  6  ", onclick: "calc.input.value += '6'" }
+      %input.last.function{ type: "button", name: "minus", value: "  -  ", onclick: "calc.input.value += ' - '" }
+
+      %input{ type: "button", name: "seven", value: "  7  ", onclick: "calc.input.value += '7'" }
+      %input{ type: "button", name: "eight", value: "  8  ", onclick: "calc.input.value += '8'" }
+      %input{ type: "button", name: "nine", value: "  9  ", onclick: "calc.input.value += '9'" }
+      %input.last.function{ type: "button", name: "times", value: "  x  ", onclick: "calc.input.value += ' * '" }
+
+      %input.clearButton{ type: "button", name: "clear", value: "  c  ", onclick: "calc.input.value = ''" }
+      %input{ type: "button", name: "zero",  value: "  0  ", onclick: "calc.input.value += '0'" }
+      %input.function{ type: "button", name: "doit", value: "  =  ", onclick: "calc.input.value = eval(calc.input.value)" }
+      %input.last.function{ type: "button", name: "div",   value: "  /  ", onclick: "calc.input.value += ' / '" }
+      %hr{ size: "0" }
+
+    %hr.clear
